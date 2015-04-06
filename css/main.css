@@ -73,7 +73,12 @@ body {
     border-bottom: 20px solid #e44d26;
 }
 
-.footer-container,
+.footer-container{
+    text-align: center;
+    border-top: 20px solid #e44d26;
+    font: 10px/20px Helvetica, Helvetica Neue, Arial;
+}
+
 .main aside {
     border-top: 20px solid #e44d26;
 }
@@ -141,7 +146,6 @@ nav a:hover {
 .main article p {
     margin-left: auto;
     margin-right: auto;
-    background: #29b5f1;
     width: 98%;
 
 
@@ -174,16 +178,32 @@ nav a:hover {
     background-color: #e44d26;
 }
 
+h1 {
+    color: navajowhite;
+}
 
+.main-container {
+    min-width: 75%;
+}
 
+.hide {
+    background: #29b5f1;
+}
 
+table {
+    width: 100%;
+    border: 1px solid white;
+}
+td {
+    border: 1px solid white;
+}
 
-
-
-
-
-
-
+.nonvis {
+    border: none;
+}
+.tdident {
+    width : 100%;
+}
 
 
 

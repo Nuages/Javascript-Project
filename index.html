@@ -13,9 +13,7 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="main.js">
-         test();
-        </script>
+        <script src="main.js"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -25,12 +23,11 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">Projet Javascript</h1>
+                <h1 class="title">Curriculum Vitae</h1>
                 <nav>
                     <ul>
-                        <li><a href="#">Index</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Jesaispas</a></li>
+                        <li><a href="index.html">Index</a></li>
+                        <li><a href="Contact.html">Contacts</a></li>
                     </ul>
                 </nav>
             </header>
@@ -40,29 +37,65 @@
 
             <div class="main wrapper clearfix">
                 <article>
-                    <h1><button id="titre5" type="boutontitre" class="btn btn-info btn-block">CV</button></h1>
-                    <div id=""><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, nisi vitae aliquet vulputate, justo massa hendrerit massa, nec posuere. </p></div>
                     <header>
-                        <h1><button id="titre1" type="boutontitre" class="btn btn-info btn-block">CV</button></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+                        <h1><button onclick="genFade(strDip)" id="titre1" type="boutontitre" class="btn btn-info btn-block">Diplômes</button></h1><!--
+                        --><table class="hide , diplome">
+                            <tr><th>2012-2015</th><th>D.U.T Informatique (en cours)</th></tr>
+                            <tr><td></td><td class="tdident"> I.U.T d'Aix-En-Provence, Aix-Marseille Université, Académie d'Aix-Marseille</td></tr>
+                        </table>
+                        <table class="hide , diplome">
+                            <tr><th>2009-2010</th><th>Titulaire du Baccalauréat Scientifique, option S.V.T</th></tr>
+                            <tr><td></td><td class="tdident"> Lycée Michelet, Marseille, Académie Aix-Marseille</td></tr>
+                        </table>
                     </header>
                     <section>
-                        <h1><button id="titre2" type="boutontitre" class="btn btn-info btn-block">CV</button></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                        <h1><button onclick="genFade(strComp)"id="titre2" type="boutontitre" class="btn btn-info btn-block">Compétences</button></h1>
+                        <table class="hide , competence">
+                            <tr><th>Spécialisées</th><th></th></tr>
+                            <tr><td>Programmation : </td><td>C++, C, Java, MIPS</td></tr>
+                            <tr><td>Web :</td><td>HTML5, CSS 3, PHP, Javascript</td></tr>
+                            <tr><td>Bases de données : </td><td>SQL, PL/SQL</td></tr>
+                            <tr><td>Modélisation : </td><td>UML, Merise</td></tr>
+                            <tr><td>Logiciels : </td><td>Code Blocks, IDE Eclipse Java et C++</td></tr>
+                        </table>
+                        <table class="hide , competence">
+                            <tr><th>Associées</th><th></th></tr>
+                            <tr><td>Mathématique : </td><td>Algèbre linéaire, Cryptographie</td></tr>
+                            <tr><td>Gestion de projet : </td><td>Méthode PERT, GANTT et méthodes agiles</td></tr>
+                            <tr><td>Economie : </td><td>Comptabilité générale et analytique</td></tr>
+                            <tr><td>Anglais : </td><td>Niveau technique</td></tr>
+                        </table>
                     </section>
                     <section>
-                        <h1><button id="titre3" type="boutontitre" class="btn btn-info btn-block">CV</button></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                        <h1><button onclick="genFade(strReal)" id="titre3" type="boutontitre" class="btn btn-info btn-block">Réalisations</button></h1>
+                        <table class="hide , realisation">
+                            <tr><th></th><th>Projet tutoré</th></tr>
+                            <tr><th>2014</th><th>Site web Dynamique de covoiturage en équipe</th></tr>
+                            <tr><td class="nonvis"></td><td>Réalisation d'un projet en vue de la mise en place d'une système de covoiturage sur
+                                l'université Aix-Marseille. Plannification du projet en utilisant la méthode GANTT.
+                                Outils : HTML/CSS, Php. Effectif du groupe : 7. Travail personnel : Gestion du projet.</td></tr>
+                            <tr><th></th><th>Projet P.O.O</th></tr>
+                            <tr><th>2013</th><th>Jeu de Catch-Me/Pac-Man</th></tr>
+                            <tr><td class="nonvis"></td><td>Réalisation du jeu de base et ajout de fonctionnalités.
+                                Outils: C++. Effectif : 3 personnes. Travail personnel : Ajout de gameplay.</td></tr>
+                            <tr><th>2014</th><th>Classe CList</th></tr>
+                            <tr><td class="nonvis"></td><td>Réalisation d'une classe de liste chaînée avec utilisation de smartpointers.
+                                Outils: C++. Effectif : 5 personnes. Travail personnel : Programmation de la CList.</td></tr>
+                            <tr><th>2015</th><th>Application pour gestion de parking</th></tr>
+                            <tr><td class="nonvis"></td><td>Réalisation d'une application pour gestion de parking avec interface graphique,
+                                Outils: Java. Effectif : 4 personnes. Travail personnel : Programmation de diverse classes.</td></tr>
+                        </table>
                     </section>
                     <footer>
-                        <h3>article footer h3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+                        <h1><button onclick="genFade(strLoi)" id="titre4" type="boutontitre" class="btn btn-info btn-block">Loisirs</button></h1>
+                        <p class="hide , loisir">Jeux vidéo, cinéma, littérature, philosophie.</p>
                     </footer>
                 </article>
 
                 <aside>
-                    <h3>Présentation</h3>
-                    <p>Bienvenue sur le site de mon projet javascript superkek, le manque d'inspiration me poussera probablement a faire un cv en ligne</p>
+                    <p>Mon souhait serait d'effectuer un stage de fin de cursus d'une durée de dix semaines à partir
+                        d'avril 2015 dans le domaine de la programmation (principalement programmation orientée objet) et
+                        ensuite poursuivre mes études.</p>
                 </aside>
 
             </div> <!-- #main -->
@@ -70,7 +103,7 @@
 
         <div class="footer-container">
             <footer class="wrapper">
-                <h3>Topkek</h3>
+                <h3>Vincent SOTO - <a href="#index.html">CV</a> - <a href="#contact.html">Contact</a></h3>
             </footer>
         </div>
 
@@ -79,21 +112,5 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/main.js"></script>
-        <script>
-            document.getElementById("h2").onclick = function() {myFunction()};
-
-            function myFunction() {
-                $("p").toggle(slow);
-            }
-        </script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>
