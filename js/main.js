@@ -11,7 +11,9 @@ function genFade(strElem) {
     strElem.fadeToggle("slow");
 }
 
-
+//tentatives ratées de création d'Array
+//
+//
 /*$(document).ready(function() {
     var tr;
     for(var i = 0; i < compTabSpe.length; i++) {
@@ -20,7 +22,7 @@ function genFade(strElem) {
         tr.append("<td>" + compTabSpe[i].detail + "</td>");
         $('#competence').append(tr);
     }
-}*/
+}
 
 var compTabSpe =[{"type":"Programmation : ","detail":"C++, C, Java, MIPS"},
                  {"type":"Web : ","detail":"HTML5, CSS 3, PHP, Javascript"},
@@ -32,4 +34,4 @@ var compTabSpe =[{"type":"Mathématique : ","detail":"Algèbre linéaire, Crypto
                  {"type":"Gestion de projet : ","detail":"Méthode PERT, GANTT et méthodes agiles"},
                  {"type":"Economie : ","detail":"Comptabilité générale et analytique"},
                  {"type":"Anglais : ","detail":"Niveau technique"}];
-
+ */
