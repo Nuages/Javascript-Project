@@ -33,4 +33,3 @@ var compTabSpe =[{"type":"Mathématique : ","detail":"Algèbre linéaire, Crypto
                  {"type":"Economie : ","detail":"Comptabilité générale et analytique"},
                  {"type":"Anglais : ","detail":"Niveau technique"}];
 
-
