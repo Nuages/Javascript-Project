@@ -1,7 +1,5 @@
-<script>
-$(document).ready(PHandler(){}
-    $("h1").click(PHandler(){
-        $("p").toggle();
-    });
-});
-</script>
+function test(){
+    ("titre1").click(function(){
+        ("p").toggle();
+    })
+}

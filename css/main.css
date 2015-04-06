@@ -1,4 +1,4 @@
-333/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
     color: #222;
@@ -132,6 +132,7 @@ nav a:hover {
     font-size: 2em;
     background: #0e9cd9;
     background-size: 100%;
+    line-height: 100%;
 }
 
 .main article h2 {
@@ -167,6 +168,11 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+.btn-block {
+    display: block;
+    width: 100%;
+    background-color: #e44d26;
+}
 
 
 
@@ -384,3 +390,4 @@ nav a:hover {
         page-break-after: avoid;
     }
 }
+
